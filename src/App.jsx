@@ -1,14 +1,23 @@
-import Button from "./components/Button";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import Body from "./Body";
+import ContactUs from "./components/ContactUs";
+import AboutUs from "./components/AboutUs";
+import Home from "./components/Home";
 
 function App() {
   return (
     <>
-      <Header />
-      <h1 className="text-2xl">Hello atDigital</h1>
-      <Button />
-      <Footer />
+      <BrowserRouter basename="/">
+        <Routes>
+          <Route path="/" element={<Body />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/about" element={<AboutUs />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+     
     </>
   );
 }

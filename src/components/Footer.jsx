@@ -2,9 +2,9 @@ import Logo from "../assets/Logo.png";
 
 const Footer = () => {
   return (
-    <div className="text-white pt-10 px-20 flex flex-col gap-10  bg-primary h-[266px] w-screen">
-      <div className="flex justify-between flex-wrap">
-        <div className="w-6//12 flex flex-col ">
+    <div className= " bottom-0 text-white pt-10 px-20 flex flex-col gap-10  bg-primary h-[266px] w-screen">
+      <div className="flex justify-between ">
+        <div className="w-6/12 flex flex-col  ">
           <img src={Logo} alt="logo" className="h-[49.62px] w-[226px]" />
           <div className="w-6/12 mt-4   ">
             Your goal is our target. Not anything in between. We use online
