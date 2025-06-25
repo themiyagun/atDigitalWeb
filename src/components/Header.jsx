@@ -29,32 +29,49 @@ const Header = () => {
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <div>X</div> : <img src={Menu} alt="menu icon" />}
-            
           </button>
         </div>
-
-       
       </div>
-       {/* mobile Menu */}
-        {isOpen && (
-          <div className="md:hidden  w-full h-screen flex flex-col gap-4 p-4 text-dark bg-white font-medium text-sm">
-            <Link to="/" className=" hover:bg-accent1 py-2" onClick={() => setIsOpen(false)}>
-              HOME
-            </Link>
-            <Link to="/services" className=" hover:bg-accent1 py-2" onClick={() => setIsOpen(false)}>
-              SERVICES
-            </Link>
-            <Link to="/about" className=" hover:bg-accent1 py-2" onClick={() => setIsOpen(false)}>
-              ABOUT US
-            </Link>
-            <Link to="/contact" className=" hover:bg-accent1 py-2" onClick={() => setIsOpen(false)}>
-              CONTACT US
-            </Link>
-            <Link to="/careers" className=" hover:bg-accent1 py-2" onClick={() => setIsOpen(false)}>
-              CAREERS
-            </Link>
-          </div>
-        )}
+      {/* mobile Menu */}
+      {isOpen && (
+        <div className="md:hidden  w-full h-screen flex flex-col gap-4 p-4 text-dark bg-white font-medium text-sm">
+          <Link
+            to="/"
+            className=" hover:bg-accent1 py-2"
+            onClick={() => setIsOpen(false)}
+          >
+            HOME
+          </Link>
+          <Link
+            to="/services"
+            className=" hover:bg-accent1 py-2"
+            onClick={() => setIsOpen(false)}
+          >
+            SERVICES
+          </Link>
+          <Link
+            to="/about"
+            className=" hover:bg-accent1 py-2"
+            onClick={() => setIsOpen(false)}
+          >
+            ABOUT US
+          </Link>
+          <Link
+            to="/contact"
+            className=" hover:bg-accent1 py-2"
+            onClick={() => setIsOpen(false)}
+          >
+            CONTACT US
+          </Link>
+          <Link
+            to="/careers"
+            className=" hover:bg-accent1 py-2"
+            onClick={() => setIsOpen(false)}
+          >
+            CAREERS
+          </Link>
+        </div>
+      )}
     </>
   );
 };
