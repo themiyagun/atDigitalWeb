@@ -6,18 +6,19 @@ import SEARCH_IMG from "../assets/search.png";
 import Accordian from "./Accordian";
 import { faqData } from "../utills/constants";
 
-
 const Home = () => {
-  
-
   return (
     <div>
       {/* hero section */}
       <div>
-        <img src={HERO_IMG} alt="heroimg" className="h-[700px] w-full" />
+        <img
+          src={HERO_IMG}
+          alt="heroimg"
+          className="h-[448] lg:h-[700px] w-full"
+        />
       </div>
-      <div className="absolute left-20 bottom-0 w-[630px] h-[306px] bg-gradient-to-r from-darkColor2 to-analogousColor2">
-        <h1 className="text-5xl font-bold text-white px-10 pt-6">
+      <div className=" lg:absolute left-20 -bottom-30 w-full lg:w-[630px] md:h-[258px] lg:h-[306px] bg-gradient-to-r from-darkColor2 to-analogousColor2">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl  font-bold text-white px-10 pt-6">
           We crush your competitors, goals, and sales records - without the B.S.
         </h1>
         <div className="px-10 py-6 ">
@@ -26,14 +27,15 @@ const Home = () => {
       </div>
       {/* ---------- */}
 
-      <div className="px-[188px] pt-[80px]">
+      <div className="px-5 md:px-10 lg:px-[188px] pt-[80px]">
         {/* Section-1 */}
-        <div className="flex items-center">
-          <div className="w-5/12">
+
+        <div className="flex flex-col md:flex-row items-center">
+          <div className="w-full lg:w-5/12">
             <img src={COMP_IMG} alt="compimg" />
           </div>
-          <div className="w-7/12">
-            <div className="text-justify pl-28">
+          <div className="w-full lg:w-7/12">
+            <div className="text-justify pl-0 lg:pl-28">
               <h3 className="font-bold text-2xl text-primary">
                 Web & Mobile App Development
               </h3>
@@ -51,9 +53,9 @@ const Home = () => {
         {/* ---------------- */}
         {/* Section 2 */}
 
-        <div className="flex items-center">
-          <div className="w-7/12">
-            <div className="text-justify pr-28">
+        <div className="flex flex-col-reverse md:flex-row items-center ">
+          <div className="w-full lg:w-7/12">
+            <div className="text-justify pr-0 lg:pr-28">
               <h3 className="font-bold text-2xl text-primary">
                 Web & Mobile App Development
               </h3>
@@ -66,14 +68,15 @@ const Home = () => {
               <Button btnName={"Learn More"}></Button>
             </div>
           </div>
-          <div className="w-5/12">
+          <div className="w-full lg:w-5/12">
             <img src={SEARCH_IMG} alt="compimg" />
           </div>
         </div>
 
         {/* ------------------ */}
         {/* Accordian */}
-        <div className="max-w-8/12 mx-auto px-4 py-8">
+
+        <div className="w-full lg:max-w-8/12 mx-auto px-4 py-8">
           <h3 className="text-2xl font-bold mb-6 text-center text-primary">
             Frequently asked questions
           </h3>
